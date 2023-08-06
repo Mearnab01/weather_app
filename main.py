@@ -14,7 +14,7 @@ name_label.place(x=25,y=50,height=50,width=450)
 
 def data_get():
     city = city_name.get()
-    api_key = os.environ["weather_api"]
+    api_key = os.environ["weather_api"] #add your weather api key and run
     url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}'
     data = requests.get(url).json()
 
